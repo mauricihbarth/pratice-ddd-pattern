@@ -1,0 +1,23 @@
+,
+  "include": [
+    "src/**/*.ts"
+  ]
+  
+  Run npm install -g npm@9.7.2 to updat
+  
+  
+   npm i tslint --save-dev   
+   npx tslint --init
+   npm i -D @swc/jest @swc/cli @swc/core
+   npm i -D jest @types/jest ts-node  --save-dev
+   npx jest --init
+   npm test
+   
+   npm i uuid @types/uuid  -----nos ajuda a criar um identificador unico 
+   
+   
+   Bibliotecas para banco de dados
+
+   npm install sequelize reflect-metadata sequelize-typescript
+   --Permite trabalhar com dados em memoria
+   npm install sqlite3
