@@ -3,6 +3,6 @@ import CustomerCreatedEvent from "../customer-created.event";
 
 export default class SendEmailWhenCustomerIsCreatedHandler implements EventHandlerInterface<CustomerCreatedEvent>{
     handle(event: CustomerCreatedEvent): void {
-        console.log(`Sending email to ${event.eventData.email}`);
+        console.log(`Sending email to ${event.eventData.name}`);
     }
 }
