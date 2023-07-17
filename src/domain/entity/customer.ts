@@ -1,3 +1,4 @@
+import EventDispatcher from "../event/@shared/event-dispatcher";
 import Address from "./address";
 
 export default class Customer {
@@ -6,6 +7,9 @@ export default class Customer {
   private _address!: Address;
   private _active: boolean = false;
   private _rewardPoints: number = 0;
+
+
+  private eventDispatcher = new EventDispatcher();
 
   constructor(id: string, name: string) {
     this._id = id;
@@ -42,7 +46,7 @@ export default class Customer {
   get Address(): Address {
     return this._address;
   }
-  
+
   changeAddress(address: Address) {
     this._address = address;
   }
