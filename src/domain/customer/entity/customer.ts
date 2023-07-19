@@ -1,5 +1,6 @@
-import EventDispatcher from "../event/@shared/event-dispatcher";
-import Address from "./address";
+
+import EventDispatcher from "../../@shared/event/event-dispatcher";
+import Address from "../value-object/address";
 
 export default class Customer {
   private _id: string;
