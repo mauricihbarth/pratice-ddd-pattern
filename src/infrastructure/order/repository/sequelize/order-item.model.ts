@@ -6,7 +6,7 @@ import {
   ForeignKey,
   BelongsTo,
 } from "sequelize-typescript";
-import ProductModel from "./product.model";
+import ProductModel from "../../../product/repository/sequilize/product.model";
 import OrderModel from "./order.model";
 
 

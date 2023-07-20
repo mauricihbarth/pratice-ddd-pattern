@@ -1,6 +1,6 @@
+import EventHandlerInterface from "../../../@shared/event/event-handler.interface";
+import CustomerUpdatedEvent from "../customer-updated.event";
 
-import EventHandlerInterface from "../../../@shared/event-handler.interface";
-import CustomerUpdatedEvent from "../../../event/customer/customer-updated.event";
 
 export default class SendEmailWhenCustomerIsUpdatedHandler implements EventHandlerInterface<CustomerUpdatedEvent>{
     handle(event: CustomerUpdatedEvent): void {

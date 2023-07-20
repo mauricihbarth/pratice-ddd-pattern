@@ -1,12 +1,12 @@
-import Address from "../entity/address";
-import Customer from "../entity/customer";
-import CustomerCreatedEvent from "../event/customer/customer-created.event";
-import CustomerUpdatedEvent from "../event/customer/customer-updated.event";
-import SendEmailWhenCustomerIsCreatedHandler from "../event/customer/handler/send-email-when-customer-is-created.handler";
-import SendEmailWhenCustomerIsUpdatedHandler from "../event/customer/handler/send-email-when-customer-is-updated.handler";
-import SendMessageKafkaWhenCustomerIsCreatedHandler from "../event/customer/handler/send-message-kafka-when-customer-is-created.handler";
-import SendEmailWhenProductIsCreatedHandler from "../product/event/handler/send-email-when-product-is-created.handler";
-import ProductCreatedEvent from "../product/product-created.event";
+import Customer from "../../customer/entity/customer";
+import CustomerCreatedEvent from "../../customer/event/customer-created.event";
+import CustomerUpdatedEvent from "../../customer/event/customer-updated.event";
+import SendEmailWhenCustomerIsCreatedHandler from "../../customer/event/handler/send-email-when-customer-is-created.handler";
+import SendEmailWhenCustomerIsUpdatedHandler from "../../customer/event/handler/send-email-when-customer-is-updated.handler";
+import SendMessageKafkaWhenCustomerIsCreatedHandler from "../../customer/event/handler/send-message-kafka-when-customer-is-created.handler";
+import Address from "../../customer/value-object/address";
+import SendEmailWhenProductIsCreatedHandler from "../../product/event/handler/send-email-when-product-is-created.handler";
+import ProductCreatedEvent from "../../product/event/product-created.event";
 import EventDispatcher from "./event-dispatcher";
 
 describe("Domain events tests", () => {

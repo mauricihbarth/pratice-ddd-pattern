@@ -1,4 +1,4 @@
-import Order from "./order";
+import Order from "./entity/order";
 import OrderItem from "./entity/order_item";
 
 describe("Order unit tests", () => {

@@ -1,9 +1,9 @@
 import { BeforeFindAfterExpandIncludeAll } from "sequelize-typescript";
-import Order from "../../domain/checkout/order";
-import OrderItem from "../../domain/entity/order_item";
-import OrderRepositoryInterface from "../../domain/checkout/order-repository-interface";
-import OrderItemModel from "../db/sequelize/model/order-item.model";
-import OrderModel from "../db/sequelize/model/order.model";
+import OrderRepositoryInterface from "../../../../domain/checkout/order-repository-interface";
+import OrderItemModel from "./order-item.model";
+import OrderModel from "./order.model";
+import OrderItem from "../../../../domain/checkout/entity/order_item";
+import Order from "../../../../domain/checkout/entity/order";
 
 
 export default class OrderRepository implements OrderRepositoryInterface {
